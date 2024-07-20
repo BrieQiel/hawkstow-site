@@ -21,6 +21,10 @@
 <script setup>
 import { ref } from "vue";
 
+useHead({
+  title: "Hawkstow Construction and Development",
+});
+
 const emit = defineEmits(["go-to-slide"]);
 
 const emitGoToSlide = (slide) => {
