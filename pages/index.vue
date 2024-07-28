@@ -27,7 +27,9 @@
       </v-carousel-item>
 
       <!-- slide 5 -->
-      <v-carousel-item>Projects</v-carousel-item>
+      <v-carousel-item>
+        <Projects />
+      </v-carousel-item>
       <!-- slide 6 -->
       <v-carousel-item>Contact</v-carousel-item>
 
@@ -56,8 +58,8 @@
 </template>
 
 <script setup>
-import { provide } from "vue";
-import { servicesData } from "@/data/servicesData";
+import { servicesData } from "/data/servicesdata.ts";
+
 
 useHead({
   title: "Hawkstow Construction and Development",
