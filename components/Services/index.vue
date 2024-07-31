@@ -1,9 +1,8 @@
 <template>
-  <div class="w-9/12 md:w-10/12 mx-auto">
-    <HeadingTitle :title="head" />
+  <div class="w-9/12 md:w-10/12 mx-auto mt-12">
+    <HeadingTitle :title="title" />
 
     <ServicesMobile
-      :title="title"
       :description="description"
       :image="image"
       :imageName="imageName"
@@ -13,7 +12,6 @@
     />
 
     <ServicesDesktop
-      :title="title"
       :description="description"
       :image="image"
       :imageName="imageName"
@@ -34,7 +32,6 @@ const props = defineProps({
   location: String,
 });
 
-const head = "Our Services";
 </script>
 
 <!--
