@@ -1,20 +1,52 @@
 <template>
   <v-app>
-    <Navbar @emitToSlide="toSlide" />
+    <Navbar @toSlide="toSlide" />
 
+    <!-- custom arrows -->
+    <div class="z-50 absolute bottom-40 right-16">
+      <v-row class="h-50">
+        <v-btn
+          @click="prevSlide()"
+          :disabled="isFirstSlide"
+          icon="mdi-arrow-up"
+          color="#175500"
+          class="m-4"
+        >
+          <v-icon>mdi-arrow-up</v-icon>
+        </v-btn>
+      </v-row>
+      <v-row class="h-50">
+        <v-btn
+          @click="nextSlide()"
+          :disabled="isLastSlide"
+          icon="mdi-arrow-down"
+          color="#175500"
+          class="m-4"
+        >
+        </v-btn>
+      </v-row>
+    </div>
+    
     <v-carousel
       class="h-screen"
       hide-delimiters
+      :show-arrows="false"
       direction="vertical"
-      :continuous="false"
+      progress="#175500"
       v-model="currentSlide"
+      :continuous="false"
     >
       <!-- slide 0 -->
       <v-carousel-item>
         <HomepageSlide />
       </v-carousel-item>
 
-      <!-- slide 1,2,3,4 -->
+      <!-- slide 1 -->
+      <v-carousel-item>
+        <AboutSlide />
+      </v-carousel-item>
+
+      <!-- slide 2,3,4,5 -->
       <v-carousel-item v-for="(service, index) in services" :key="index">
         <Services
           :title="service.title"
@@ -26,40 +58,18 @@
         />
       </v-carousel-item>
 
-      <!-- slide 5 -->
+      <!-- slide 6 -->
       <v-carousel-item>
         <Projects />
       </v-carousel-item>
-      <!-- slide 6 -->
+      <!-- slide 7 -->
       <v-carousel-item>Contact</v-carousel-item>
-
-      <template v-slot:next="{ props }">
-        <v-btn
-          class="absolute m-8"
-          style="bottom: -30%"
-          @click="props.onClick"
-          icon="mdi-arrow-down"
-          color="#175500"
-        >
-        </v-btn>
-      </template>
-      <template v-slot:prev="{ props }">
-        <v-btn
-          class="absolute m-8"
-          style="bottom: -30%"
-          @click="props.onClick"
-          icon="mdi-arrow-up"
-          color="#175500"
-        >
-        </v-btn>
-      </template>
     </v-carousel>
   </v-app>
 </template>
 
 <script setup>
 import { servicesData } from "/data/servicesdata.ts";
-
 
 useHead({
   title: "Hawkstow Construction and Development",
@@ -68,9 +78,9 @@ useHead({
 const currentSlide = ref(0);
 const services = ref(servicesData);
 
-function toSlide(slide) {
-  currentSlide.value = slide;
-}
+const isFirstSlide = computed(() => currentSlide.value === 0);
+const isLastSlide = computed(() => currentSlide.value === 7);
+const nextSlide = computed(() => (currentSlide.value += 1));
+const prevSlide = computed(() => (currentSlide.value -= 1));
+const toSlide = (slide) => (currentSlide.value = slide);
 </script>
-
-<style scoped></style>
