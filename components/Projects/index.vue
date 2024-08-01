@@ -1,11 +1,14 @@
 <template>
-  <div class="w-9/12 md:w-10/12 mx-auto">
+  <div class="w-9/12 md:w-10/12 mx-auto mt-12">
     <HeadingTitle :title="head" />
 
-    <marquee class="w-8/12 mx-auto border">hello hehe</marquee>
+    <ProjectsDesktop />
   </div>
 </template>
 
 <script setup>
 const head = "Projects";
 </script>
+
+<style scoped>
+</style>
