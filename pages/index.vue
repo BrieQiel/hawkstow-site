@@ -3,7 +3,7 @@
     <Navbar @toSlide="toSlide" />
 
     <!-- custom arrows -->
-    <div class="z-50 absolute bottom-40 right-16">
+    <div class="z-50 absolute bottom-40 right-8">
       <v-row class="h-50">
         <v-btn
           @click="prevSlide()"
@@ -26,45 +26,52 @@
         </v-btn>
       </v-row>
     </div>
-    
-    <v-carousel
-      class="h-screen"
-      hide-delimiters
-      :show-arrows="false"
-      direction="vertical"
-      progress="#175500"
-      v-model="currentSlide"
-      :continuous="false"
-    >
-      <!-- slide 0 -->
-      <v-carousel-item>
-        <HomepageSlide />
-      </v-carousel-item>
 
-      <!-- slide 1 -->
-      <v-carousel-item>
-        <AboutSlide />
-      </v-carousel-item>
+    <v-img class="h-screen" src="assets/images/bg.png" cover>
+      <v-carousel
+        class="h-screen"
+        hide-delimiters
+        :show-arrows="false"
+        direction="vertical"
+        progress="#175500"
+        v-model="currentSlide"
+        :continuous="false"
+        :touch="false"
+      >
+        <!-- slide 0 -->
+        <v-carousel-item>
+          <HomepageSlide />
+        </v-carousel-item>
 
-      <!-- slide 2,3,4,5 -->
-      <v-carousel-item v-for="(service, index) in services" :key="index">
-        <Services
-          :title="service.title"
-          :description="service.description"
-          :image="service.image"
-          :imageName="service.imageName"
-          :area="service.area"
-          :location="service.location"
-        />
-      </v-carousel-item>
+        <!-- slide 1 -->
+        <v-carousel-item color="white">
+          <AboutSlide />
+        </v-carousel-item>
 
-      <!-- slide 6 -->
-      <v-carousel-item>
-        <Projects />
-      </v-carousel-item>
-      <!-- slide 7 -->
-      <v-carousel-item>Contact</v-carousel-item>
-    </v-carousel>
+        <!-- slide 2,3,4,5 -->
+        <v-carousel-item
+          v-for="(service, index) in services"
+          :key="index"
+          color="white"
+        >
+          <Services
+            :title="service.title"
+            :description="service.description"
+            :image="service.image"
+            :imageName="service.imageName"
+            :area="service.area"
+            :location="service.location"
+          />
+        </v-carousel-item>
+
+        <!-- slide 6 -->
+        <v-carousel-item color="white">
+          <Projects />
+        </v-carousel-item>
+        <!-- slide 7 -->
+        <v-carousel-item color="white">Contact</v-carousel-item>
+      </v-carousel>
+    </v-img>
   </v-app>
 </template>
 
@@ -80,7 +87,7 @@ const services = ref(servicesData);
 
 const isFirstSlide = computed(() => currentSlide.value === 0);
 const isLastSlide = computed(() => currentSlide.value === 7);
-const nextSlide = computed(() => (currentSlide.value += 1));
-const prevSlide = computed(() => (currentSlide.value -= 1));
+const nextSlide = () => (currentSlide.value += 1);
+const prevSlide = () => (currentSlide.value -= 1);
 const toSlide = (slide) => (currentSlide.value = slide);
 </script>
