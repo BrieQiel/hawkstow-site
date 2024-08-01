@@ -36,3 +36,26 @@ export const servicesData = [
     location: 'Manila',
   },
 ];
+
+export const servicesData2 = [
+  {
+    title: "General Contracting",
+    icon: "gc.png",
+  },
+  {
+    title: "Pre-Engineering and Design Management",
+    icon: "pdm.png",
+  },
+  {
+    title: "Construction Project Management",
+    icon: "cpm.png",
+  },
+  {
+    title: "Building Repair, Rehabilitation, and Maintenance",
+    icon: "brrm.png",
+  },
+  {
+    title: "Geotechnical Services",
+    icon: "gs.png",
+  },
+];
