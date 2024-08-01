@@ -1,24 +1,24 @@
 <template>
-    <div class="w-9/12 h-40 mx-auto relative overflow-hidden startendmask">
-        <div class="w-11/12 flex flex-row absolute  marqueeanimation">
+    <div class="w-9/12 h-32 mx-auto relative overflow-hidden startendmask">
+        <div class="w-11/12 flex flex-row absolute marqueeanimation">
           <div class="flex flex-row" style="width: 200%">
-            <div v-for="client in clients" class="mr-4 align-center">
+            <div v-for="client in clients" class="w-40 mr-4 align-center">
               <v-img
                 :src="`/images/clients/${client.logo}`"
-                :width="80"
+                :width="60"
                 aspect-ratio="1"
                 class="mx-auto mb-2"
               />
-              <p class="w-40 text-center">{{ client.name }}</p>
+              <p class="text-center text-sm">{{ client.name }}</p>
             </div>
-            <div v-for="client in clients" class="mr-4 align-center">
+            <div v-for="client in clients" class="w-40 mr-4 align-center">
               <v-img
                 :src="`/images/clients/${client.logo}`"
-                :width="80"
+                :width="60"
                 aspect-ratio="1"
                 class="mx-auto mb-2"
               />
-              <p class="w-40 text-center">{{ client.name }}</p>
+              <p class="text-center text-sm">{{ client.name }}</p>
             </div>
           </div>
         </div>
