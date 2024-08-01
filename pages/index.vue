@@ -27,7 +27,12 @@
       </v-row>
     </div>
 
-    <v-img class="h-screen" src="assets/images/bg.png" cover>
+    <v-img
+      class="h-screen"
+      src="assets/images/bg.png"
+      lazy-src="assets/images/bg.png"
+      cover
+    >
       <v-carousel
         class="h-screen"
         hide-delimiters
