@@ -5,19 +5,11 @@
     <ServicesMobile
       :description="description"
       :image="image"
-      :imageName="imageName"
-      :area="area"
-      :location="location"
-      class="hidden-md-and-up mb-4"
     />
 
     <ServicesDesktop
       :description="description"
       :image="image"
-      :imageName="imageName"
-      :area="area"
-      :location="location"
-      class="hidden-sm-and-down"
     />
   </div>
 </template>
@@ -27,9 +19,6 @@ const props = defineProps({
   title: String,
   description: String,
   image: String,
-  imageName: String,
-  area: String,
-  location: String,
 });
 
 </script>
