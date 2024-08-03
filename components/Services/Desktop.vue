@@ -5,8 +5,8 @@
   >
     <v-img
       :src="`/images/${image}`"
-      :width="400"
-      height="300"
+      :width="350"
+      aspect-ratio="3/4"
       lazy-src="assets/images/bg.png"
       cover
     />
