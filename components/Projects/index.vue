@@ -3,6 +3,7 @@
     <HeadingTitle :title="head" />
 
     <ProjectsDesktop />
+    <ProjectsMobile />
   </div>
 </template>
 
