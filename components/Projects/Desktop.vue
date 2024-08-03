@@ -1,5 +1,5 @@
 <template>
-  <div class="h-100 mx-20 mt-12 text-center hidden-sm-and-down" align="center">
+  <div class="h-100 mx-20 mt-4 lg:mt-4 xl:mt-16 text-center hidden-sm-and-down" align="center">
     <div class="flex flex-row mb-16">
       <v-img
       src="assets/images/bg.png"

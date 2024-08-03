@@ -9,7 +9,7 @@
                 aspect-ratio="1"
                 class="mx-auto mb-2"
               />
-              <p class="text-center text-sm">{{ client.name }}</p>
+              <p class="text-center text-xs">{{ client.name }}</p>
             </div>
             <div v-for="client in clients" class="w-40 mr-4 align-center">
               <v-img
@@ -18,7 +18,7 @@
                 aspect-ratio="1"
                 class="mx-auto mb-2"
               />
-              <p class="text-center text-sm">{{ client.name }}</p>
+              <p class="text-center text-xs">{{ client.name }}</p>
             </div>
           </div>
         </div>
