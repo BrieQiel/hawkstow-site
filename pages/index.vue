@@ -74,7 +74,9 @@
           <Projects />
         </v-carousel-item>
         <!-- slide 7 -->
-        <v-carousel-item color="white">Contact</v-carousel-item>
+        <v-carousel-item color="white">
+          <Contact />
+        </v-carousel-item>
       </v-carousel>
     </v-img>
   </v-app>
