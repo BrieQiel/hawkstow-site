@@ -1,5 +1,5 @@
 <template>
-    <h1 class="font-Lexend font-semibold text-[#175500] text-3xl mb-2 mt-5">
+    <h1 class="fadefromleft font-Lexend font-semibold text-[#175500] text-3xl mb-2 mt-5">
         {{ props.title }}
       </h1>
       <v-divider

@@ -1,6 +1,6 @@
 <template>
   <div
-    class="h-100 mx-20 mt-20 flex flex-row text-left hidden-sm-and-down"
+    class="h-100 mx-20 mt-12 lg:mt-12 xl:mt-20 flex flex-row text-left hidden-sm-and-down"
     align="center"
   >
     <v-img
@@ -11,7 +11,7 @@
       cover
     />
     <div class="mx-10">
-      <p class="text-sm md:text-base">{{ description }}</p>
+      <p class="text-sm lg:text-sm xl:text-base">{{ description }}</p>
     </div>
   </div>
 </template>
