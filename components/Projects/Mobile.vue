@@ -28,7 +28,7 @@
     </div>
 
     <Marquee :fade="true">
-      <div v-for="client in clients" class="w-40 mr-4 align-center">
+      <div v-for="client in clients" class="w-32 mb-4 align-center">
         <v-img
           :src="`/images/clients/${client.logo}`"
           :width="60"
