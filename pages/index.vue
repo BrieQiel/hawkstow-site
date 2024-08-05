@@ -1,6 +1,7 @@
 <template>
   <v-app>
-    <NavBarDefault @toSlide="toSlide" />
+    <NavBarDesktop @toSlide="toSlide" />
+    <NavBarMobile @toSlide="toSlide" />
 
     <!-- custom arrows -->
     <div class="z-50 absolute bottom-40 right-8">
