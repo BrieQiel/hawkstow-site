@@ -1,7 +1,7 @@
 <template>
   <v-toolbar height="70" color="white">
     <v-row class="mx-4">
-      <v-img src="public/images/logo.webp" max-width="50" @click="toSlide(0)" class="cursor-pointer"></v-img>
+      <v-img src="assets/images/logo.webp" max-width="50" @click="toSlide(0)" class="cursor-pointer"></v-img>
       <div class="flex">
         <v-toolbar-title
           class="cursor-pointer ml-4"
