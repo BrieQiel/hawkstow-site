@@ -2,6 +2,8 @@
   <v-carousel
     :show-arrows="false"
     cycle
+    continuous
+    interval="2500"
     touch
     hide-delimiter-background
     color="#d4bf18"
@@ -9,14 +11,13 @@
     height="280"
   >
     <v-carousel-item v-for="services in servicesList">
-      <v-card flat class="h-fit w-56 m-4 mx-auto">
+      <v-card flat class="h-fit w-44 m-4 mx-auto">
         <v-img
           :src="`/images/services/${services.icon}`"
-          :width="100"
-          height="100"
+          aspect-ratio="1"
           lazy-src="assets/images/bg.png"
           cover
-          class="mt-4 mx-auto"
+          class="w-20 mt-4 mx-auto"
         ></v-img>
         <p class="mt-4 mx-4 text-center">{{ services.title }}</p>
       </v-card>
