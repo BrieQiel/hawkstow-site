@@ -1,30 +1,23 @@
 <template>
   <div class="h-100 text-center hidden-md-and-up " align="center">
-    <div class="mb-12 ">
-      <v-img
-      src="assets/images/bg.png"
-      :width="150"
-      aspect-ratio="3/4"
-      lazy-src="assets/images/bg.png"
-      cover
-      class="mx-auto my-1"
-    />
-    <v-img
-      src="assets/images/bg.png"
-      :width="150"
-      aspect-ratio="3/4"
-      lazy-src="assets/images/bg.png"
-      cover
-      class="mx-auto my-1"
-    />
-    <v-img
-      src="assets/images/bg.png"
-      :width="150"
-      aspect-ratio="3/4"
-      lazy-src="assets/images/bg.png"
-      cover
-      class="mx-auto my-1"
-    />
+    <div class="mb-12">
+      <div v-for="(project, index) in projects" :key="index">
+        <NuxtLink :to="`/projects/${project.link}`">
+          <v-img
+            :src="`/images/${project.image}`"
+            aspect-ratio="3/4"
+            :lazy-src="`/images/${project.image}`"
+            cover
+            class="mx-auto my-4 w-44"
+          >
+            <v-container
+              class="h-full font-Lexend text-lg text-white bg-transparent opacity-100 content-center"
+            >
+              <p class="tracking-wider text-xs">{{ project.title }}</p>
+            </v-container>
+          </v-img>
+        </NuxtLink>
+      </div>
     </div>
 
     <Marquee :fade="true">
@@ -43,9 +36,11 @@
 </template>
 
 <script setup>
-import { projectsData } from "@/data/projectsData";
+import { clientsData } from "@/data/projectsData";
+import { projectThumbnails } from "@/data/projectsData";
 
-const clients = ref(projectsData);
+const clients = ref(clientsData);
+const projects = ref(projectThumbnails);
 </script>
 
 

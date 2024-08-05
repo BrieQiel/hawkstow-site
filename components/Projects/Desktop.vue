@@ -1,6 +1,6 @@
 <template>
   <div
-    class="h-100 mx-20 mt-4 lg:mt-4 xl:mt-16 text-center hidden-sm-and-down"
+    class="h-100 mx-20 mt-8 lg:mt-12 xl:mt-20 text-center hidden-sm-and-down"
     align="center"
   >
     <div class="flex flex-row md:mb-16 justify-center">
@@ -9,7 +9,7 @@
           <v-img
             :src="`/images/${project.image}`"
             aspect-ratio="3/4"
-            lazy-src="assets/images/bg.png"
+            :lazy-src="`/images/${project.image}`"
             cover
             class="mx-8 w-44 md:w-44 lg:w-52 xl:w-64 2xl:w-80"
           >
@@ -42,60 +42,9 @@
 </template>
 
 <script setup>
-import { projectsData } from "@/data/projectsData";
+import { clientsData } from "@/data/projectsData";
+import { projectThumbnails } from "@/data/projectsData";
 
-const clients = ref(projectsData);
-const projects = ref([
-  {
-    title: "Commercial Buildings",
-    link: "commercial-buildings",
-    image: "bg.png",
-  },
-  {
-    title: "Government Buildings",
-    link: "government-buildings",
-    image: "bg.png",
-  },
-  {
-    title: "Roads",
-    link: "roads",
-    image: "bg.png",
-  },
-]);
+const clients = ref(clientsData);
+const projects = ref(projectThumbnails);
 </script>
-
-<!--
-<NuxtLink to="/projects/commercial-buildings">
-        <v-img
-          src="assets/images/bg.png"
-          aspect-ratio="3/4"
-          lazy-src="assets/images/bg.png"
-          cover
-          class="mx-8 w-44 md:w-44 lg:w-52 xl:w-64 2xl:w-80"
-        >
-          <v-container
-            class="h-full font-Lexend text-lg text-white bg-[#84bf6e] opacity-5 hover:opacity-100 content-center"
-          >
-            <p class="tracking-wider">Commercial Buildings</p>
-          </v-container>
-        </v-img>
-      </NuxtLink>
-      <NuxtLink to="/projects">
-        <v-img
-          src="assets/images/bg.png"
-          aspect-ratio="3/4"
-          lazy-src="assets/images/bg.png"
-          cover
-          class="mx-8 w-44 md:w-44 lg:w-52 xl:w-64 2xl:w-80"
-        />
-      </NuxtLink>
-
-      <NuxtLink to="/projects">
-        <v-img
-          src="assets/images/bg.png"
-          aspect-ratio="3/4"
-          lazy-src="assets/images/bg.png"
-          cover
-          class="mx-8 w-44 md:w-44 lg:w-52 xl:w-64 2xl:w-80"
-      /></NuxtLink>
--->
