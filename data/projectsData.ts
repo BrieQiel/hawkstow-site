@@ -1,4 +1,4 @@
-export const projectsData = [
+export const clientsData = [
   {
     name: "Department of Public Works and Highways",
     logo: "dpwh.png",
@@ -18,5 +18,23 @@ export const projectsData = [
   {
     name: "Department of Transportation",
     logo: "dotr.png",
+  },
+];
+
+export const projectThumbnails = [
+  {
+    title: "Commercial Buildings",
+    link: "commercial-buildings",
+    image: "bg.png",
+  },
+  {
+    title: "Government Buildings",
+    link: "government-buildings",
+    image: "bg.png",
+  },
+  {
+    title: "Roads",
+    link: "roads",
+    image: "bg.png",
   },
 ];
