@@ -1,6 +1,6 @@
 <template>
   <div class="w-9/12 md:w-10/12 mx-auto mt-8 lg:mt-8 xl:mt-12">
-    <HeadingTitle :title="title" />
+    <HeadingTitle title="About us" />
 
     <p class="text-sm lg:text-sm xl:text-base mx-8 mt-12">
       <span class="font-bold">Hawkstow</span>
@@ -26,5 +26,4 @@
 import { servicesData2 } from "/data/servicesdata.ts";
 
 const servicesList = ref(servicesData2);
-const title = "About Us";
 </script>
