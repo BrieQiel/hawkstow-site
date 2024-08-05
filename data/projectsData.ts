@@ -40,13 +40,13 @@ export const projectData = [
     link: "government-buildings",
     thumbnail: "bg.png",
     images: [
-      'placeholder.png',
-      'placeholder.png',
-      'placeholder.png',
-      'placeholder.png',
-      'placeholder.png',
-      'placeholder.png',
-      'placeholder.png',
+      'placeholder.jpg',
+      'placeholder.jpg',
+      'placeholder.jpg',
+      'placeholder.jpg',
+      'placeholder.jpg',
+      'placeholder.jpg',
+      'placeholder.jpg',
     ]
   },
   {
@@ -54,9 +54,9 @@ export const projectData = [
     link: "roads",
     thumbnail: "bg.png",
     images: [
-      'placeholder.png',
-      'placeholder.png',
-      'placeholder.png',
+      'placeholder.jpg',
+      'placeholder.jpg',
+      'placeholder.jpg',
       'bg.png',
       'bg.png',
       'bg.png',
