@@ -21,20 +21,45 @@ export const clientsData = [
   },
 ];
 
-export const projectThumbnails = [
+export const projectData = [
   {
     title: "Commercial Buildings",
     link: "commercial-buildings",
-    image: "bg.png",
+    thumbnail: "bg.png",
+    images:[
+      "bg.png",
+      "bg.png",
+      "bg.png",
+      "bg.png",
+      "bg.png",
+      "bg.png",
+    ]
   },
   {
     title: "Government Buildings",
     link: "government-buildings",
-    image: "bg.png",
+    thumbnail: "bg.png",
+    images: [
+      'placeholder.png',
+      'placeholder.png',
+      'placeholder.png',
+      'placeholder.png',
+      'placeholder.png',
+      'placeholder.png',
+      'placeholder.png',
+    ]
   },
   {
     title: "Roads",
     link: "roads",
-    image: "bg.png",
+    thumbnail: "bg.png",
+    images: [
+      'placeholder.png',
+      'placeholder.png',
+      'placeholder.png',
+      'bg.png',
+      'bg.png',
+      'bg.png',
+    ]
   },
 ];

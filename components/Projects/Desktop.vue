@@ -7,9 +7,9 @@
       <div v-for="(project, index) in projects" :key="index">
         <NuxtLink :to="`/projects/${project.link}`">
           <v-img
-            :src="`/images/${project.image}`"
+            :src="`/images/${project.thumbnail}`"
             aspect-ratio="3/4"
-            :lazy-src="`/images/${project.image}`"
+            :lazy-src="`/images/${project.thumbnail}`"
             cover
             class="mx-8 w-44 md:w-44 lg:w-52 xl:w-64 2xl:w-80"
           >
@@ -43,8 +43,8 @@
 
 <script setup>
 import { clientsData } from "@/data/projectsData";
-import { projectThumbnails } from "@/data/projectsData";
+import { projectData } from "@/data/projectsData";
 
 const clients = ref(clientsData);
-const projects = ref(projectThumbnails);
+const projects = ref(projectData);
 </script>

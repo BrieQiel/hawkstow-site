@@ -14,17 +14,30 @@
         </NuxtLink>
       </div>
     </div>
+    <p v-for="image in images">
+      {{ image }}
+    </p>
 
-    <p>Commercial Buildings</p>
   </div>
 </template>
 
 <script setup>
-import { projectThumbnails } from "@/data/projectsData";
+import { projectData } from "@/data/projectsData";
 import { useRoute } from "vue-router";
 
-const projects = ref(projectThumbnails);
 const route = useRoute();
+const projects = ref(projectData);
+const projectDetails = ref({});
+const images = ref([]);
+
+onMounted(() => {
+  projectDetails.value = projects.value.find(
+    (project) => project.link === route.params.project
+  );
+  if (projectDetails.value) {
+    images.value = projectDetails.value.images;
+  }
+});
 
 const isSelected = (index) => {
   if (route.path === `/projects/${projects.value[index].link}`) {
