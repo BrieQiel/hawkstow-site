@@ -27,7 +27,17 @@
     />
     </div>
 
-    <MarqueeMobile :clients="clients" />
+    <Marquee :fade="true">
+      <div v-for="client in clients" class="w-40 mr-4 align-center">
+        <v-img
+          :src="`/images/clients/${client.logo}`"
+          :width="60"
+          aspect-ratio="1"
+          class="mx-auto mb-2"
+        />
+        <p class="text-center text-xs">{{ client.name }}</p>
+      </div>
+    </Marquee>
     <p class="font-Lexend font-semibold text-[#175500] text-xl">&#38; <br /> PRIVATE BUSINESSES</p>
   </div>
 </template>
