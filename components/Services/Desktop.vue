@@ -7,7 +7,7 @@
       :src="`/images/${image}`"
       :width="350"
       aspect-ratio="3/4"
-      lazy-src="assets/images/bg.png"
+      :lazy-src="`/images/${image}`"
       cover
     />
     <div class="mx-10">
