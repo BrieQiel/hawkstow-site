@@ -3,18 +3,17 @@
     class="h-100 mx-20 mt-8 lg:mt-12 xl:mt-20 text-center hidden-sm-and-down"
     align="center"
   >
-    <div class="flex flex-row md:mb-16 justify-center">
-      <div v-for="(project, index) in projects" :key="index">
+    <div class="flex flex-row md:mb-16 content-center justify-center">
+      <div v-for="(project, index) in projects" :key="index"  class="mx-4 w-10/12 aspect-video">
         <NuxtLink :to="`/projects/${project.link}`">
           <v-img
             :src="`/images/${project.thumbnail}`"
-            aspect-ratio="3/4"
+            height="200"
             :lazy-src="`/images/${project.thumbnail}`"
             cover
-            class="mx-8 w-44 md:w-44 lg:w-52 xl:w-64 2xl:w-80"
           >
             <v-container
-              class="h-full font-Lexend text-lg text-white bg-[#84bf6e] opacity-5 hover:opacity-100 content-center"
+              class="h-full font-Lexend text-lg text-white bg-[#84bf6e] opacity-[.01] hover:opacity-100 content-center"
             >
               <p class="tracking-wider">{{ project.title }}</p>
             </v-container>
@@ -48,3 +47,5 @@ import { projectData } from "@/data/projectsData";
 const clients = ref(clientsData);
 const projects = ref(projectData);
 </script>
+
+<!--w-44 md:w-44 lg:w-52 xl:w-64 2xl:w-80-->
