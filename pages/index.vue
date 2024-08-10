@@ -72,7 +72,7 @@
 
         <!-- slide 6 -->
         <v-carousel-item color="white">
-          MotorPool
+          <Motorpool />
         </v-carousel-item>
 
         <!-- slide 7 -->
