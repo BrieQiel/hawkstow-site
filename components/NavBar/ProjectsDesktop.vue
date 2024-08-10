@@ -1,5 +1,6 @@
 <template>
   <v-toolbar height="70" color="white" class="hidden-sm-and-down">
+    <v-spacer></v-spacer>
     <v-row class="mx-4">
       <NuxtLink to="/">
         <img
