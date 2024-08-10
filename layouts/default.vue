@@ -1,6 +1,5 @@
 <template>
   <v-app>
-    <slot />
     <!-- HTML Meta Tags -->
     <title>Hawkstow Construction and Development</title>
     <meta name="description" content="Building Future Pathways" />
@@ -15,7 +14,7 @@
     <meta property="og:description" content="Building Future Pathways" />
     <meta
       property="og:image"
-      content="https://opengraph.b-cdn.net/production/images/9d732d67-ecbb-4ac6-ac8a-d3333d59f3bc.png?token=Pv6mD5lzWg2qY2J6C-efPPMXUOoltgIAdJe9DJnCOB0&height=511&width=1112&expires=33259283542"
+      content="https://drive.google.com/file/d/18_T0GitkKjsCRRxigyym8741rUdVXV3n/view?usp=sharing"
     />
 
     <!-- Twitter Meta Tags -->
@@ -35,10 +34,12 @@
     <meta name="twitter:description" content="Building Future Pathways" />
     <meta
       name="twitter:image"
-      content="https://opengraph.b-cdn.net/production/images/9d732d67-ecbb-4ac6-ac8a-d3333d59f3bc.png?token=Pv6mD5lzWg2qY2J6C-efPPMXUOoltgIAdJe9DJnCOB0&height=511&width=1112&expires=33259283542"
+      content="https://drive.google.com/file/d/18_T0GitkKjsCRRxigyym8741rUdVXV3n/view?usp=sharing"
     />
 
     <!-- Meta Tags Generated via https://www.opengraph.xyz -->
+
+    <slot />
   </v-app>
 </template>
 
