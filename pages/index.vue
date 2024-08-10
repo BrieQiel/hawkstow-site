@@ -99,7 +99,7 @@ const currentSlide = ref(0);
 const services = ref(servicesData);
 
 const isFirstSlide = computed(() => currentSlide.value === 0);
-const isLastSlide = computed(() => currentSlide.value === 7);
+const isLastSlide = computed(() => currentSlide.value === 8);
 const nextSlide = () => (currentSlide.value += 1);
 const prevSlide = () => (currentSlide.value -= 1);
 const toSlide = (slide) => (currentSlide.value = slide);
