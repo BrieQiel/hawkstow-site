@@ -58,4 +58,8 @@ export const servicesData2 = [
     title: "Geotechnical Services",
     icon: "gs.png",
   },
+  {
+    title: "Land and Land Development",
+    icon: "lld.png",
+  },
 ];
