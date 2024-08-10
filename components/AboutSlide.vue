@@ -3,7 +3,7 @@
     <HeadingTitle title="About us" />
 
     <p class="text-sm lg:text-sm xl:text-base mx-8 mt-12">
-      <span class="font-bold">Hawkstow</span>
+      <span class="font-bold text-[#175500]">Hawkstow</span>
       <span class="">
         is a privately owned multidisciplinary engineering enterprise with
         employed dedicated professionals having extensive and proud experiences
@@ -13,7 +13,7 @@
       </span>
     </p>
 
-    <p class="font-Lexend text-base md:text-lg mx-8 mt-8 text-center">
+    <p class="text-base font-bold text-[#175500] md:text-lg mx-8 mt-8 text-center">
       Our Services include:
     </p>
     <v-row class="flex justify-center">
