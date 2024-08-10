@@ -34,9 +34,9 @@ onMounted(() => {
 
 const isSelected = (index) => {
   if (route.path === `/gallery/${projects.value[index].link}`) {
-    return "text-lg md:text-xl mb-2 underline";
+    return "text-base md:text-xl mb-2 underline";
   } else {
-    return "text-sm md:text-base mb-2 hover:underline";
+    return "text-xs md:text-base mb-2 hover:underline";
   }
 };
 </script>
