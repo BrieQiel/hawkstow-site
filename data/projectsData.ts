@@ -62,4 +62,19 @@ export const projectData = [
       'bg.png',
     ]
   },
+  {
+    title: "Low-cost Buildings",
+    link: "low-cost-buildings",
+    thumbnail: "bg.png",
+    images: [
+      'placeholder.jpg',
+      'placeholder.jpg',
+      'placeholder.jpg',
+      'bg.png',
+      'bg.png',
+      'bg.png',
+      'placeholder.jpg',
+      'placeholder.jpg',
+    ]
+  },
 ];
