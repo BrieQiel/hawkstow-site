@@ -1,14 +1,13 @@
 <template>
   <div class="h-100 text-center hidden-md-and-up " align="center">
-    <div class="mb-12">
-      <div v-for="(project, index) in projects" :key="index">
-        <NuxtLink :to="`/projects/${project.link}`">
+    <v-row class="mb-16 mt-4 justify-center">
+      <v-cols v-for="(project, index) in projects" :key="index" class="aspect-video m-1 w-5/12">
+        <NuxtLink :to="`/gallery/${project.link}`">
           <v-img
             :src="`/images/${project.thumbnail}`"
-            aspect-ratio="3/4"
             :lazy-src="`/images/${project.thumbnail}`"
             cover
-            class="mx-auto my-4 w-44"
+            class="mx-auto"
           >
             <v-container
               class="h-full font-Lexend text-lg text-white bg-transparent opacity-100 content-center"
@@ -17,14 +16,14 @@
             </v-container>
           </v-img>
         </NuxtLink>
-      </div>
-    </div>
+      </v-cols>
+    </v-row>
 
     <Marquee :fade="true">
-      <div v-for="client in clients" class="w-32 mb-4 align-center">
+      <div v-for="client in clients" class="w-24 mb-4 align-center">
         <v-img
           :src="`/images/clients/${client.logo}`"
-          :width="60"
+          :width="50"
           aspect-ratio="1"
           class="mx-auto mb-2"
         />

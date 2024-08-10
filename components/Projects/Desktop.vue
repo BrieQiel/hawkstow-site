@@ -5,7 +5,7 @@
   >
     <div class="flex flex-row md:mb-16 content-center justify-center">
       <div v-for="(project, index) in projects" :key="index"  class="mx-4 w-10/12 aspect-video">
-        <NuxtLink :to="`/projects/${project.link}`">
+        <NuxtLink :to="`/gallery/${project.link}`">
           <v-img
             :src="`/images/${project.thumbnail}`"
             height="200"
