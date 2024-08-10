@@ -63,8 +63,8 @@ export const projectData = [
     ]
   },
   {
-    title: "Low-cost Buildings",
-    link: "low-cost-buildings",
+    title: "Low Cost Residential Houses",
+    link: "low-cost-residential-houses",
     thumbnail: "bg.png",
     images: [
       'placeholder.jpg',

@@ -20,12 +20,12 @@
         <v-cols v-for="(image, index) in images" :key="index">
           <v-img
             :src="`/images/${image}`"
-            width="150"
+            width="130"
             :aspect-ratio="4 / 3"
             cover
             class="m-1 cursor-pointer"
           >
-            <v-dialog activator="parent" class="w-1/2">
+            <v-dialog activator="parent" class="">
               <v-img :src="`/images/${image}`" />
             </v-dialog>
           </v-img>
