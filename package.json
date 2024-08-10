@@ -13,6 +13,7 @@
   },
   "dependencies": {
     "@mdi/font": "^7.4.47",
+    "@selemondev/vue3-marquee": "^0.0.8",
     "nuxt": "^3.12.4",
     "vue": "latest"
   },

@@ -2,17 +2,16 @@
   <v-card
     v-for="services in servicesList"
     flat
-    class="h-64 w-24 lg:w-36 xl:w-48 m-4 hidden-sm-and-down"
+    class="h-fit w-44 mt-8 mx-2 hidden-sm-and-down hover:scale-105 hover:font-bold hover:text-[#175500]"
   >
     <v-img
       :src="`/images/services/${services.icon}`"
-      :width="100"
       aspect-ratio="1"
-      lazy-src="assets/images/bg.png"
+      :lazy-src="`/images/services/${services.icon}`"
       cover
-      class="mt-4 mx-auto"
+      class="mt-4 mx-auto w-4/12"
     />
-    <p class="mt-5 mx-4 text-sm lg:text-sm xl:text-base text-center">{{ services.title }}</p>
+    <p class="mt-5 text-sm lg:text-sm xl:text-base text-center ">{{ services.title }}</p>
   </v-card>
 </template>
 

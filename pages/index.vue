@@ -1,6 +1,7 @@
 <template>
   <v-app>
-    <Navbar @toSlide="toSlide" />
+    <NavBarDesktop @toSlide="toSlide" />
+    <NavBarMobile @toSlide="toSlide" />
 
     <!-- custom arrows -->
     <div class="z-50 absolute bottom-40 right-8">
@@ -71,9 +72,14 @@
 
         <!-- slide 6 -->
         <v-carousel-item color="white">
+          <Motorpool />
+        </v-carousel-item>
+
+        <!-- slide 7 -->
+        <v-carousel-item color="white">
           <Projects />
         </v-carousel-item>
-        <!-- slide 7 -->
+        <!-- slide 8 -->
         <v-carousel-item color="white">
           <Contact />
         </v-carousel-item>
@@ -93,7 +99,7 @@ const currentSlide = ref(0);
 const services = ref(servicesData);
 
 const isFirstSlide = computed(() => currentSlide.value === 0);
-const isLastSlide = computed(() => currentSlide.value === 7);
+const isLastSlide = computed(() => currentSlide.value === 8);
 const nextSlide = () => (currentSlide.value += 1);
 const prevSlide = () => (currentSlide.value -= 1);
 const toSlide = (slide) => (currentSlide.value = slide);

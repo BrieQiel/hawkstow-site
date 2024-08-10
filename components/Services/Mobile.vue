@@ -1,10 +1,10 @@
 <template>
-  <div class="hidden-md-and-up">
+  <div class="mt-8 hidden-md-and-up">
     <v-img
       :src="`/images/${image}`"
       :width="250"
       height="150"
-      lazy-src="assets/images/bg.png"
+      :lazy-src="`/images/${image}`"
       cover
       class="mx-auto"
     />

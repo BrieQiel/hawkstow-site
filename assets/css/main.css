@@ -4,6 +4,16 @@
 @tailwind components;
 @tailwind utilities;
 
+::-moz-selection { /* Code for Firefox */
+  color: white;
+  background: #175500cf;
+}
+
+::selection {
+  color: white;
+  background: #175500cf;
+}
+
 html {
   overflow: hidden !important;
   font-family: Arial, Helvetica, sans-serif !important;
