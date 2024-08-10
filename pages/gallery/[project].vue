@@ -18,6 +18,10 @@
 import { projectData } from "@/data/projectsData";
 import { useRoute } from "vue-router";
 
+useHead({
+  title: "Gallery | Hawkstow Construction and Development",
+});
+
 const route = useRoute();
 const projects = ref(projectData);
 const projectDetails = ref({});
