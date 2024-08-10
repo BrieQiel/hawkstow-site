@@ -30,11 +30,16 @@
           </v-list-item>
           <v-list-item>
             <v-btn variant="text" @click="toSlide(6)">
-              <p class="text-xs">Projects</p>
+              <p class="text-xs">Motorpool</p>
             </v-btn>
           </v-list-item>
           <v-list-item>
             <v-btn variant="text" @click="toSlide(7)">
+              <p class="text-xs">Projects</p>
+            </v-btn>
+          </v-list-item>
+          <v-list-item>
+            <v-btn variant="text" @click="toSlide(8)">
               <p class="text-xs">Contact</p>
             </v-btn>
           </v-list-item>

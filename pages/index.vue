@@ -72,9 +72,14 @@
 
         <!-- slide 6 -->
         <v-carousel-item color="white">
+          MotorPool
+        </v-carousel-item>
+
+        <!-- slide 7 -->
+        <v-carousel-item color="white">
           <Projects />
         </v-carousel-item>
-        <!-- slide 7 -->
+        <!-- slide 8 -->
         <v-carousel-item color="white">
           <Contact />
         </v-carousel-item>
