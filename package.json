@@ -4,13 +4,16 @@
   "type": "module",
   "scripts": {
     "build": "nuxt build",
+    "start": "node .output/server/index.mjs",
     "dev": "nuxt dev",
     "generate": "nuxt generate",
     "preview": "nuxt preview",
+    "heroku-postbuild": "npm run build",
     "postinstall": "nuxt prepare"
   },
   "dependencies": {
     "@mdi/font": "^7.4.47",
+    "@selemondev/vue3-marquee": "^0.0.8",
     "nuxt": "^3.12.4",
     "vue": "latest"
   },

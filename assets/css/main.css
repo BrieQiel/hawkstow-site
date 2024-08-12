@@ -1,10 +1,36 @@
-@import url('https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap");
 
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
+::-moz-selection { /* Code for Firefox */
+  color: white;
+  background: #175500cf;
+}
+
+::selection {
+  color: white;
+  background: #175500cf;
+}
+
 html {
-    overflow: hidden !important;
-    font-family: Arial, Helvetica, sans-serif !important;
+  overflow: hidden !important;
+  font-family: Arial, Helvetica, sans-serif !important;
+}
+
+.fadefromleft {
+  animation: fadeLeft 1s ease-in-out 0.3s;
+}
+
+@keyframes fadeLeft {
+  from {
+    opacity: 0;
+    transform: translateX(-50px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
 }
