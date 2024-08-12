@@ -4,7 +4,7 @@
     <NavBarMobile @toSlide="toSlide" />
 
     <!-- custom arrows -->
-    <div class="z-50 absolute bottom-40 right-8">
+    <div class="z-50 absolute bottom-28 md:bottom-40 right-8 md:right-12">
       <v-row class="h-50">
         <v-btn
           @click="prevSlide()"

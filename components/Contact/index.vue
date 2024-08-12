@@ -3,6 +3,7 @@
     <HeadingTitle title="Contact" />
 
     <ContactDesktop />
+    <contactMobile />
   </div>
 </template>
 
