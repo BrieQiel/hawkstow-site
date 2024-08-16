@@ -1,7 +1,7 @@
 <template>
   <div class="h-100 text-center hidden-md-and-up " align="center">
     <v-row class="mb-16 mt-4 justify-center">
-      <v-cols v-for="(project, index) in projects" :key="index" class="aspect-video m-1 w-5/12">
+      <v-cols v-for="(project, index) in projects" :key="index" class="aspect-video m-1 w-5/12 ping">
         <NuxtLink :to="`/gallery/${project.link}`">
           <v-img
             :src="`/images/${project.thumbnail}`"
