@@ -2,10 +2,9 @@
     <div
       class="w-100 p-4 md:p-6 bg-[#e7eae7] rounded-md drop-shadow-md"
     >
-      <p class="text-gray-700 text-xs md:text-sm">
+      <p class="text-gray-700 text-xs md:text-sm hidden-sm-and-down">
         For any inquiries, questions or commendations, please fill out the given
         form or call the provided number.<br /><br />
-        <span class="font-bold hidden-md-and-up">Swipe to view details <v-icon>mdi-arrow-right</v-icon><br /><br/></span>
       </p>
 
       <!-- emailer from https://web3forms.com/ -->
@@ -36,6 +35,7 @@
               label="Name*"
               variant="solo"
               flat
+              dirty
               density="compact"
               bg-color="white"
               :rules="nameRules"
@@ -50,6 +50,7 @@
               label="Email Address*"
               variant="solo"
               flat
+              dirty
               density="compact"
               bg-color="white"
               :rules="emailRules"
@@ -68,6 +69,7 @@
               hide-spin-buttons
               variant="solo"
               flat
+              dirty
               density="compact"
               bg-color="white"
               :rules="phoneRules"
@@ -81,6 +83,7 @@
               label="Address"
               variant="solo"
               flat
+              dirty
               density="compact"
               bg-color="white"
               :rules="addressRules"
@@ -97,6 +100,7 @@
           label="Subject*"
           variant="solo"
           flat
+          dirty
           prepend-inner-icon=""
           density="compact"
           bg-color="white"
@@ -111,6 +115,7 @@
           label="Message*"
           variant="solo"
           flat
+          dirty
           prepend-inner-icon=""
           density="compact"
           bg-color="white"
