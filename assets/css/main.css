@@ -4,7 +4,8 @@
 @tailwind components;
 @tailwind utilities;
 
-::-moz-selection { /* Code for Firefox */
+::-moz-selection {
+  /* Code for Firefox */
   color: white;
   background: #175500cf;
 }
@@ -22,7 +23,7 @@ input::-webkit-inner-spin-button {
 }
 
 /* Firefox */
-input[type=number] {
+input[type="number"] {
   -moz-appearance: textfield;
 }
 
@@ -32,7 +33,11 @@ html {
 }
 
 .fadefromleft {
-  animation: fadeLeft 1s ease-in-out 0.3s;
+  animation: fadeLeft 1s ease-in-out;
+}
+
+.ping {
+  animation: ping 0.5s ease-in-out 0.2s;
 }
 
 @keyframes fadeLeft {
@@ -44,5 +49,20 @@ html {
   to {
     opacity: 1;
     transform: translateX(0);
+  }
+}
+
+@keyframes ping {
+  0% {
+    transform: scale(1);
+    opacity: 0.5;
+  }
+  50% {
+    transform: scale(1.20);
+    opacity: 1;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 1;
   }
 }

@@ -4,7 +4,7 @@
     align="center"
   >
     <div class="flex flex-row md:mb-16 content-center justify-center">
-      <div v-for="(project, index) in projects" :key="index"  class="mx-4 w-10/12 aspect-video">
+      <div v-for="(project, index) in projects" :key="index"  class="mx-4 w-10/12 aspect-video ping">
         <NuxtLink :to="`/gallery/${project.link}`">
           <v-img
             :src="`/images/${project.thumbnail}`"
@@ -13,9 +13,9 @@
             cover
           >
             <v-container
-              class="h-full font-Lexend text-lg text-white bg-[#84bf6e] opacity-[.01] hover:opacity-100 content-center"
+              class="h-full font-Lexend text-lg text-white bg-[#175500] opacity-[.01] hover:opacity-75 content-center"
             >
-              <p class="tracking-wider">{{ project.title }}</p>
+              <p class="underline decoration-[#d4bf18] tracking-wider">{{ project.title }}</p>
             </v-container>
           </v-img>
         </NuxtLink>

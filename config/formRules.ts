@@ -19,21 +19,20 @@ export const ContactRules: Record<string, Function[]> = {
       "Email must be less than 50 characters long",
   ],
 
+  // removed rules for phone and address
+  // because they are not required in the contact form
+  /*
   phoneRules: [
     (value: any) =>
       /^(?:\+63|0)?[0-9]{10}$/.test(value) || "Please enter a valid phone number",
-    (value: any) =>
-      (value && value.trim().length <= 14) || "Please enter a phone number",
   ],
 
   addressRules: [
     (value: any) =>
-      (value && value.trim().length >= 2) ||
-      "Adddress must be at least 2 characters long",
-    (value: any) =>
       (value && value.trim().length <= 100) ||
       "Address must be less than 100 characters long",
   ],
+*/
 
   subjectRules: [
     (value: any) => !!value || "Subject is required",
