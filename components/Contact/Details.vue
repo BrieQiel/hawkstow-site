@@ -1,5 +1,5 @@
 <template>
-  <p class="mb-5 mt-4">
+  <p class="mb-5 mt-0 md:mt-4">
     <span class="font-Lexend font-bold text-lg md:text-xl text-[#175500] mb-4"
       >Head Office</span
     >
