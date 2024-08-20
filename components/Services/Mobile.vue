@@ -2,8 +2,8 @@
   <div class="mt-8 hidden-md-and-up">
     <v-img
       :src="`/images/${image}`"
-      :width="250"
-      height="150"
+      width="200"
+      aspect-ratio="1.78"
       :lazy-src="`/images/${image}`"
       cover
       class="mx-auto"
