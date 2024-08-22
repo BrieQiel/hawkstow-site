@@ -1,5 +1,5 @@
 <template>
-  <Marquee>
+  <Marquee class="hidden-md-and-up">
     <v-card
       v-for="services in servicesList"
       flat
