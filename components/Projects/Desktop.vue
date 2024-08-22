@@ -7,9 +7,9 @@
       <div v-for="(project, index) in projects" :key="index"  class="mx-4 w-10/12 aspect-video ping">
         <NuxtLink :to="`/gallery/${project.link}`">
           <v-img
-            :src="`/images/${project.thumbnail}`"
+            :src="`/images/projects/${project.thumbnail}`"
             height="200"
-            :lazy-src="`/images/${project.thumbnail}`"
+            :lazy-src="`/images/projects/${project.thumbnail}`"
             cover
           >
             <v-container
