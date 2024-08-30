@@ -59,22 +59,40 @@ export const servicesData2 = [
 // temp quotes
 export const motorpoolData = [
   {
-    image: "placeholder.jpg",
+    image: "backhoe-loader.jpeg",
     quote:
-      "Our fleet of trucks ensures timely delivery of materials to any site.",
+      "Versatile backhoe loaders for multi-tasking with digging and loading on-site.",
   },
   {
-    image: "placeholder.jpg",
-    quote: "State-of-the-art excavators ready for any construction challenge.",
+    image: "bulldozer.jpeg",
+    quote: "Powerful bulldozers for efficient soil, sand, and rubble pushing.",
   },
   {
-    image: "placeholder.jpg",
+    image: "concrete-mixer-truck.jpeg",
     quote:
-      "Versatile loaders for efficient material handling and site preparation.",
+      "Reliable concrete mixer trucks for fresh concrete delivery to construction sites.",
   },
   {
-    image: "placeholder.jpg",
+    image: "dump-truck.jpeg",
     quote:
-      "Cranes and lifting equipment for precision and safety on every project.",
+      "Durable dump trucks for easy carrying and unloading of bulk materials.",
+  },
+  {
+    image: "excavator.jpeg",
+    quote: "Heavy-duty excavators for precise digging and earth moving.",
+  },
+  {
+    image: "mobile-crane.jpeg",
+    quote: "Mobile cranes for safe and precise lifting of heavy objects.",
+  },
+  {
+    image: "skid-steer-loader.jpeg",
+    quote:
+      "Agile skid steer loaders for efficient digging and material handling in tight spaces.",
+  },
+  {
+    image: "water-truck.jpeg",
+    quote:
+      "Essential water trucks for effective dust control and water transportation on-site.",
   },
 ];
