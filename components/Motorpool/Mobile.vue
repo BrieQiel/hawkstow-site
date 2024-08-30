@@ -8,11 +8,11 @@
       interval="3000"
       progress="#175500"
     >
-      <v-carousel-item v-for="feature in features" :key="feature.id">
+      <v-carousel-item v-for="feature in features">
         <v-img
-          :src="`/images/${feature.image}`"
-          class="mb-4"
-          aspect-ratio="0.9"
+          :src="`/images/motorpool/${feature.image}`"
+          class="mb-4 aspect-[4/3] feature-mobile"
+          style="box-shadow: 0px 5px 10px #848484;"
           cover
         />
         <p class="italic text-sm lg:text-sm xl:text-base">
