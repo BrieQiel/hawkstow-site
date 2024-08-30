@@ -9,6 +9,7 @@
           <v-img
             :src="`/images/projects/${project.thumbnail}`"
             height="200"
+            style="box-shadow: 0px 5px 10px #848484;"
             :lazy-src="`/images/projects/${project.thumbnail}`"
             cover
           >
