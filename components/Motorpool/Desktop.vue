@@ -6,14 +6,14 @@
     <v-row class=" justify-center">
       <v-col
         v-for="(feature, index) in features"
-        class="w-72 aspect-[9/25] text-left hover:scale-105 hover:font-bold hover:text-[#175500]"
+        class="w-72 aspect-[9/25] text-left text-sm text-[#7b7b7b] hover:scale-105 hover:font-bold hover:text-[#175500] hover:text-base ping"
       >
           <v-img
             :src="`/images/motorpool/${feature.image}`"
             class="mb-6 grayscale aspect-[4/3] feature"
             cover
           />
-          <p class="italic text-xs lg:text-xs xl:text-base">
+          <p class="italic">
             "{{ feature.quote }}"
           </p>
       </v-col>
