@@ -8,6 +8,7 @@
             :lazy-src="`/images/projects/${project.thumbnail}`"
             cover
             class="mx-auto mb-1"
+            style="box-shadow: 0px 5px 10px #848484;"
             aspect-ratio="1.5"
           >
           </v-img>
