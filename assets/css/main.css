@@ -40,6 +40,36 @@ html {
   animation: ping 0.5s ease-in-out 0.2s;
 }
 
+.feature {
+  margin-bottom: 1em;
+  margin-top: 4em;
+  width: auto;
+  box-shadow: 0px 5px 10px #848484;
+  filter: grayscale(100%);
+}
+
+.feature:hover {
+  margin-top: 1em;
+  width: 28em;
+  height: auto;
+  aspect-ratio: auto;
+  box-shadow: 0px 10px 10px #848484;
+  border-radius: 10px;
+  filter: grayscale(0%);
+  transition: 0.5s ease-in-out;
+}
+
+.feature-mobile {
+  margin-top: 0.5em;
+  width: 28em;
+  height: auto;
+  aspect-ratio: auto;
+  box-shadow: 0px 10px 10px #848484;
+  border-radius: 10px;
+  filter: grayscale(0%);
+  animation: feature 1s ease-in-out;
+}
+
 @keyframes fadeLeft {
   from {
     opacity: 0;
@@ -64,5 +94,26 @@ html {
   100% {
     transform: scale(1);
     opacity: 1;
+  }
+}
+
+@keyframes feature {
+  from {
+    margin-top: 4em;
+    width: auto;
+    box-shadow: 0px 5px 10px #848484;
+    filter: grayscale(100%);
+    animation: feature 0.5s ease-in-out
+  }
+
+  to {
+    margin-top: 0.5em;
+    width: 28em;
+    height: auto;
+    aspect-ratio: auto;
+    box-shadow: 0px 10px 10px #848484;
+    border-radius: 10px;
+    filter: grayscale(0%);
+    transition: 0.5s ease-in-out;
   }
 }
