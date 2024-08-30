@@ -13,7 +13,7 @@
       aspect-ratio="1.67"
       :lazy-src="`/images/services/${image}`"
       cover
-      class="border"
+      class=""
     />
     <div class="mx-10">
       <p class="text-sm lg:text-sm xl:text-base">{{ description }}</p>
