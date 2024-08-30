@@ -13,7 +13,7 @@
             cover
           >
             <v-container
-              class="h-full font-Lexend text-lg text-white bg-[#175500] opacity-[.01] hover:opacity-75 content-center"
+              class="h-full font-Lexend text-lg text-white bg-[#175500] opacity-[.01] hover:opacity-100 content-center"
             >
               <p class="underline decoration-[#d4bf18] tracking-wider">{{ project.title }}</p>
             </v-container>
