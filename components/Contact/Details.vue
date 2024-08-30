@@ -20,11 +20,14 @@
   ></iframe>
 
   <p class="">
-    To get a quote, please call:
+    To get a quote, please contact:
     <br />
     <a :href="`tel:${tel}`" class="font-bold text-[#175500] text-lg font-Lexend underline">{{ tel }}</a>
+    <br /> or <br />
+    <a :href="`mailto:${email}`" class="font-bold text-[#175500] text-lg font-Lexend underline">{{ email }}</a>
   </p>
 </template>
 <script setup>
-const tel = '+63 90000000'
+const tel = '(+632) 827 318 95'
+const email = 'admin@hawkstow.com'
 </script>

@@ -5,11 +5,13 @@
     <ServicesMobile
       :description="description"
       :image="image"
+      :video="video"
     />
 
     <ServicesDesktop
       :description="description"
       :image="image"
+      :video="video"
     />
   </div>
 </template>
@@ -19,6 +21,7 @@ const props = defineProps({
   title: String,
   description: String,
   image: String,
+  video: String,
 });
 
 </script>

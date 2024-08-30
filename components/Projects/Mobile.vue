@@ -1,20 +1,17 @@
 <template>
   <div class="h-100 text-center hidden-md-and-up " align="center">
-    <v-row class="mb-16 mt-4 justify-center">
-      <v-cols v-for="(project, index) in projects" :key="index" class="aspect-video m-1 w-5/12 ping">
+    <v-row class="mb-12 mt-4 justify-center">
+      <v-cols v-for="(project, index) in projects" :key="index" class="m-1 w-[47%] mb-3 ping">
         <NuxtLink :to="`/gallery/${project.link}`">
           <v-img
-            :src="`/images/${project.thumbnail}`"
-            :lazy-src="`/images/${project.thumbnail}`"
+            :src="`/images/projects/${project.thumbnail}`"
+            :lazy-src="`/images/projects/${project.thumbnail}`"
             cover
-            class="mx-auto"
+            class="mx-auto mb-1"
+            aspect-ratio="1.5"
           >
-            <v-container
-              class="h-full font-Lexend text-lg text-white bg-transparent opacity-100 content-center"
-            >
-              <p class="tracking-wider text-xs">{{ project.title }}</p>
-            </v-container>
           </v-img>
+          <p class="font-Lexend font-medium text-[#175500] text-xs drop-shadow underline">{{ project.title }}</p>
         </NuxtLink>
       </v-cols>
     </v-row>
@@ -30,7 +27,7 @@
         <p class="text-center text-xs">{{ client.name }}</p>
       </div>
     </Marquee>
-    <p class="font-Lexend font-semibold text-[#175500] text-xl">&#38; <br /> PRIVATE BUSINESSES</p>
+    <p class="font-Lexend font-semibold text-[#175500] text-l">&#38; <br /> PRIVATE BUSINESSES</p>
   </div>
 </template>
 

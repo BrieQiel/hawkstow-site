@@ -19,14 +19,14 @@
     <v-row class="justify-center">
       <v-cols v-for="(image, index) in images" :key="index">
         <v-img
-          :src="`/images/${image}`"
+          :src="`/images/projects/${image}`"
           width="200"
           :aspect-ratio="4 / 3"
           cover
           class="m-1 cursor-pointer"
         >
           <v-dialog activator="parent" class="w-1/2">
-            <v-img :src="`/images/${image}`" class="m-1"></v-img>
+            <v-img :src="`/images/projects/${image}`" class="m-1"></v-img>
           </v-dialog>
         </v-img>
       </v-cols>

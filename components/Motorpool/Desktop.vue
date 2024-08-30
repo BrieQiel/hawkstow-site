@@ -1,19 +1,21 @@
 <template>
   <div
-    class="h-100 w-10/12 mx-auto mt-8 lg:mt-12 xl:mt-20 hidden-sm-and-down"
+    class="h-100 w-12/12 mx-auto mt-8 lg:mt-12 xl:mt-20 hidden-sm-and-down"
     align="center"
   >
-    <v-row class="w-full">
-      <v-col v-for="feature in features" class="w-72 aspect-[3/4] text-left">
-        <v-img
-          :src="`/images/${feature.image}`"
-          class="mb-4"
-          aspect-ratio="0.75"
-          cover
-        />
-        <p class="italic text-sm lg:text-sm xl:text-base">
-          "{{ feature.quote }}"
-        </p>
+    <v-row class=" justify-center">
+      <v-col
+        v-for="(feature, index) in features"
+        class="w-72 aspect-[9/25] text-left hover:scale-105 hover:font-bold hover:text-[#175500]"
+      >
+          <v-img
+            :src="`/images/motorpool/${feature.image}`"
+            class="mb-6 grayscale aspect-[4/3] feature"
+            cover
+          />
+          <p class="italic text-xs lg:text-xs xl:text-base">
+            "{{ feature.quote }}"
+          </p>
       </v-col>
     </v-row>
   </div>
@@ -23,4 +25,5 @@
 import { motorpoolData } from "@/data/servicesdata";
 
 const features = ref(motorpoolData);
+
 </script>

@@ -64,9 +64,7 @@
             :title="service.title"
             :description="service.description"
             :image="service.image"
-            :imageName="service.imageName"
-            :area="service.area"
-            :location="service.location"
+            :video="service.video"
           />
         </v-carousel-item>
 

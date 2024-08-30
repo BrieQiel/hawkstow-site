@@ -7,13 +7,13 @@
       <div v-for="(project, index) in projects" :key="index"  class="mx-4 w-10/12 aspect-video ping">
         <NuxtLink :to="`/gallery/${project.link}`">
           <v-img
-            :src="`/images/${project.thumbnail}`"
+            :src="`/images/projects/${project.thumbnail}`"
             height="200"
-            :lazy-src="`/images/${project.thumbnail}`"
+            :lazy-src="`/images/projects/${project.thumbnail}`"
             cover
           >
             <v-container
-              class="h-full font-Lexend text-lg text-white bg-[#175500] opacity-[.01] hover:opacity-75 content-center"
+              class="h-full font-Lexend text-lg text-white bg-[#175500] opacity-[.01] hover:opacity-100 content-center"
             >
               <p class="underline decoration-[#d4bf18] tracking-wider">{{ project.title }}</p>
             </v-container>
