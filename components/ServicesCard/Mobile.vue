@@ -10,9 +10,9 @@
         aspect-ratio="1"
         :lazy-src="`/images/services/${services.icon}`"
         cover
-        class="w-20 mt-4 mx-auto"
+        class="w-16 mt-4 mx-auto"
       ></v-img>
-      <p class="mt-4 mx-4 text-center text-sm lg:text-sm xl:text-base">
+      <p class="mt-4 mx-4 text-center text-xs lg:text-xs xl:text-sm">
         {{ services.title }}
       </p>
     </v-card>
