@@ -4,7 +4,7 @@
       >Head Office</span
     >
     <br />
-    <span class="text-xs md:text-base"
+    <span class="text-xs md:text-base font-Lexend"
       >Lot 14 Block 5, Emerald Hills Subdivision, Brgy. Sta. Cruz, Antipolo
       City, 1870, Philippines</span
     >
@@ -19,7 +19,7 @@
     class="h-48 w-100 mb-8 mt-2 aspect-auto"
   ></iframe>
 
-  <p class="">
+  <p class="font-Lexend">
     To get a quote, please contact:
     <br />
     <a :href="`tel:${tel}`" class="font-bold text-[#175500] text-lg font-Lexend underline">{{ tel }}</a>
