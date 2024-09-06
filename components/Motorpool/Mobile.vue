@@ -1,21 +1,34 @@
 <template>
   <div class="h-100 text-left hidden-md-and-up mt-4" align="center">
+    <p class="mb-8 text-xs text-center font-Lexend">
+      Compound located at:
+      <br />
+      <a
+        href="https://maps.app.goo.gl/Z2u2whMwYk1WkArS8"
+        target="_blank"
+        class="font-bold text-[#175500] hover:text-[#d4bf18] text-sm font-Lexend underline"
+      >
+      <v-icon> mdi-google-maps</v-icon>Hawkstow Construction Compound, Antipolo, Rizal
+        
+      </a>
+    </p>
+
     <v-carousel
       hide-delimiters
       :show-arrows="false"
       continuous
       cycle
       interval="3000"
-      progress="#175500"
+      class=""
     >
-      <v-carousel-item v-for="feature in features">
+      <v-carousel-item v-for="feature in features" class="">
         <v-img
           :src="`/images/motorpool/${feature.image}`"
-          class="mb-4 aspect-[4/3] feature-mobile"
+          class="w-10 mb-4 aspect-[4/3] mx-auto feature-mobile"
           style="box-shadow: 0px 5px 10px #848484;"
           cover
         />
-        <p class="italic text-sm lg:text-sm xl:text-base">
+        <p class="w-11/12 italic text-xs lg:text-sm xl:text-base mx-auto">
           "{{ feature.quote }}"
         </p>
       </v-carousel-item>
