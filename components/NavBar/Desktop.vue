@@ -21,7 +21,7 @@
       <v-toolbar-items class="flex hidden-sm-and-down">
         <v-btn variant="text" @click="toSlide(1)">About</v-btn>
         <v-btn variant="text" @click="toSlide(6)">Motorpool</v-btn>
-        <v-btn variant="text" @click="toSlide(7)">Projects</v-btn>
+        <v-btn variant="text" @click="toSlide(7)">Clients</v-btn> <!-- removed Projects for now -->
         <v-btn variant="text" @click="toSlide(8)">Contact</v-btn>
       </v-toolbar-items>
     </v-row>

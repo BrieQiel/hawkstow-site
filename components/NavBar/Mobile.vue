@@ -35,7 +35,7 @@
           </v-list-item>
           <v-list-item>
             <v-btn variant="text" @click="toSlide(7)">
-              <p class="text-xs">Projects</p>
+              <p class="text-xs">Clients</p> <!-- removed Projects for now -->
             </v-btn>
           </v-list-item>
           <v-list-item>

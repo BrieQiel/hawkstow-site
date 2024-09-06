@@ -1,5 +1,8 @@
 <template>
   <div class="h-100 text-center hidden-md-and-up " align="center">
+<!--
+    commented out for now; no pics yet
+
     <v-row class="mb-12 mt-4 justify-center">
       <v-cols v-for="(project, index) in projects" :key="index" class="m-1 w-[47%] mb-3 ping">
         <NuxtLink :to="`/gallery/${project.link}`">
@@ -15,10 +18,12 @@
           <p class="font-Lexend font-medium text-[#175500] text-xs drop-shadow underline">{{ project.title }}</p>
         </NuxtLink>
       </v-cols>
-    </v-row>
+    </v-row>    
+
+-->
 
     <Marquee :fade="true">
-      <div v-for="client in clients" class="w-24 mb-4 align-center">
+      <div v-for="client in clients" class="w-24 mb-4 align-center mt-8">
         <v-img
           :src="`/images/clients/${client.logo}`"
           :width="50"
@@ -28,7 +33,7 @@
         <p class="text-center text-xs">{{ client.name }}</p>
       </div>
     </Marquee>
-    <p class="font-Lexend font-semibold text-[#175500] text-l">&#38; <br /> PRIVATE BUSINESSES</p>
+    <p class="font-Lexend font-semibold text-[#175500] text-l mt-8">&#38; <br /> PRIVATE BUSINESSES</p>
   </div>
 </template>
 

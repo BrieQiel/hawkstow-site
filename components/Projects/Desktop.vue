@@ -3,6 +3,9 @@
     class="h-100 mx-20 mt-8 lg:mt-12 xl:mt-20 text-center hidden-sm-and-down"
     align="center"
   >
+  <!--
+    commented out for now; no pics yet
+
     <div class="flex flex-row md:mb-16 content-center justify-center">
       <div v-for="(project, index) in projects" :key="index"  class="mx-4 w-10/12 aspect-video ping">
         <NuxtLink :to="`/gallery/${project.link}`">
@@ -22,9 +25,10 @@
         </NuxtLink>
       </div>
     </div>
+    -->
 
     <Marquee :fade="true" :pauseOnHover="true">
-      <div v-for="client in clients" class="w-40 mr-4 align-center">
+      <div v-for="client in clients" class="w-40 mr-6 align-center mt-8">
         <v-img
           :src="`/images/clients/${client.logo}`"
           :width="60"
@@ -34,7 +38,7 @@
         <p class="text-center text-xs">{{ client.name }}</p>
       </div>
     </Marquee>
-    <p class="font-Lexend font-semibold text-[#175500] text-xl">
+    <p class="font-Lexend font-semibold text-[#175500] text-xl mt-8">
       &#38; <br />
       PRIVATE BUSINESSES
     </p>
